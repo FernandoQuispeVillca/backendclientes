@@ -25,7 +25,7 @@ public class CustomerController {
         return services.getById(Long.parseLong(id));
     }
 
-    /** POST /customers -> Delete a customer in the database. */
+    /** Delete /customers -> Delete a customer in the database. */
     @DeleteMapping ("/api/customers/{id}")
     public void remove(@PathVariable String id) {
         services.remove(Long.parseLong(id));
